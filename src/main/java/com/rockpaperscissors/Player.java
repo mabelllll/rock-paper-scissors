@@ -9,10 +9,6 @@ public class Player {
     private int numOfLoses;
     private int numOfDraws;
 
-    // public Player(String name) {
-    // this.name = name;
-    // }
-
     public Player(String name, String[] handsignOptions) {
         this.name = name;
         for(int i = 0; i < handsignOptions.length; i++) {
