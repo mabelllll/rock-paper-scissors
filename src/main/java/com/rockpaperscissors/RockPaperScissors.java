@@ -1,3 +1,4 @@
+package main.java.com.rockpaperscissors;
 import java.util.ArrayList;
 import java.util.Random;
 
