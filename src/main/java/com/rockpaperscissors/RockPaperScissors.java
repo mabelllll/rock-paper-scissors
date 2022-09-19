@@ -8,7 +8,7 @@ public class RockPaperScissors {
         //Creating player A and player B
         Player playerA = new Player("Player A", optionsA);
         Player playerB = new Player("Player B", optionsB);
-        Match rockpaperscissorsMatch = new Match(playerA, playerB, 20, 10, 4, 6);
+        Match rockpaperscissorsMatch = new Match(playerA, playerB, 100, 31, 37, 32);
 
         rockpaperscissorsMatch.startMatch();
 
