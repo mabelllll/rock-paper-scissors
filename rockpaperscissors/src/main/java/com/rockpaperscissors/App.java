@@ -1,7 +1,9 @@
-package main.java.com.rockpaperscissors;
+package com.rockpaperscissors;
 
-public class RockPaperScissors {    
-    public static void main(String[] args) throws Exception {
+public class App 
+{
+    public static void main( String[] args )
+    {
         String[] optionsA = {"paper"};
         String[] optionsB = {"rock", "paper", "scissors"};
 
@@ -11,6 +13,5 @@ public class RockPaperScissors {
         Match rockpaperscissorsMatch = new Match(playerA, playerB, 100, 31, 37, 32);
 
         rockpaperscissorsMatch.startMatch();
-
     }
 }
