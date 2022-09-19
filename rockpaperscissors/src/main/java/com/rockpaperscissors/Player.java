@@ -1,4 +1,4 @@
-package main.java.com.rockpaperscissors;
+package com.rockpaperscissors;
 
 import java.util.ArrayList;
 
