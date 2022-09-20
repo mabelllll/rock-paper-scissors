@@ -12,8 +12,6 @@ public class App
         Player playerB = new Player("Player B", optionsB);
         Match rockpaperscissorsMatch = new Match(playerA, playerB, 100, 31, 37, 32);
 
-        // rockpaperscissorsMatch.startMatch();
-        System.out.println(rockpaperscissorsMatch.selectChoice(playerA));
-        System.out.println(rockpaperscissorsMatch.selectChoice());
+        rockpaperscissorsMatch.startMatch();
     }
 }
