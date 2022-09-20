@@ -54,7 +54,7 @@ public class Match {
         return selectedChoice;
     }
 
-    // Regenerate new random choice for player B
+    // Regenerate new random choice for player B with elimination of old choice in the options
     public String reselectChoice(ArrayList<String> handsignArrList) {
         String reselectedChoice;
         if (handsignArrList.size() > 1) {
