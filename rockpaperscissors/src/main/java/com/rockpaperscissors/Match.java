@@ -19,6 +19,14 @@ public class Match {
     private String newChoiceB = "";
     private ArrayList<String> currentHandsignArrList = new ArrayList<>();
 
+    public Player getPlayerA() {
+        return playerA;
+    }
+
+    public Player getPlayerB() {
+        return playerB;
+    }
+
     public Match(Player playerA, Player playerB, int numOfMatches, int numOfAWins, int numOfBWins, int numOfDraws) {
         try {
             if (numOfMatches == numOfAWins + numOfBWins + numOfDraws) {
@@ -54,7 +62,7 @@ public class Match {
         return selectedChoice;
     }
 
-    // Regenerate new random choice for player B
+    // Regenerate new random choice for player B with elimination of old choice in the options
     public String reselectChoice(ArrayList<String> handsignArrList) {
         String reselectedChoice;
         if (handsignArrList.size() > 1) {
@@ -215,9 +223,12 @@ public class Match {
         System.out.println(playerA.getName() + "'s statistics");
         System.out.println("Win: " + playerA.getNumOfWins());
         System.out.println("Loses: " + playerA.getNumOfLoses());
+        System.out.println("Draws: " + playerA.getNumOfDraws());
+        System.out.println();
         System.out.println(playerB.getName() + "'s statistics");
         System.out.println("Win: " + playerB.getNumOfWins());
         System.out.println("Loses: " + playerB.getNumOfLoses());
-        System.out.println("Number of draws between " + playerA.getName() + " and " + playerB.getName() + ": " + playerA.getNumOfDraws());
+        System.out.println("Draws: " + playerB.getNumOfDraws());
+        System.out.println();
     }
 }
